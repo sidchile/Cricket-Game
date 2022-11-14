@@ -1,0 +1,81 @@
+import random
+
+player = input("Enter Player Name :- ")
+print()
+
+print(f"Hii !!! {player} Welcome to Book Cricket")
+print()
+
+score_board = 0
+
+start=(input("To Start The Game Enter Here").upper)
+
+while True:
+    
+    runs = ["0","1","2","3","4","5","6"]
+    i = random.choice(runs)
+
+    if i =="1":
+        print()
+        print(f"You Have Scored a SINGLE ")
+        score_board+=1
+        print(f"   Your Total Runs are :- {score_board}")
+        print()
+        play_next_ball=input(" To Play Next Ball press Enter")
+       
+        
+    if i =="2":
+        print()
+        print(f"You Have Scored TWO Runs")
+        score_board+=2
+        print(f"   Your Total Runs are :- {score_board}")
+        print()
+        play_next_ball=input(" To Play Next Ball press Enter")
+        
+    if i =="3":
+        print()
+        print(f"You Have Scored THREE Runs")
+        score_board+=3
+        print(f"   Your Total Runs are :- {score_board}")
+        print()
+        play_next_ball=input(" To Play Next Ball press Enter")
+       
+    if i =="4":
+        print()
+        print(f"Hurray !!!! You Have Hit a Boundary")
+        score_board+=4
+        print(f"   Your Total Runs are :- {score_board}")
+        print()
+        play_next_ball=input(" To Play Next Ball press Enter")
+      
+        
+    if i =="5":
+        print()
+        print(f"Its A DOT BALL ")
+        score_board+=0
+        print(f"   Your Total Runs are :- {score_board}")
+        print()
+        play_next_ball=input(" To Play Next Ball press Enter")
+    
+       
+    if i =="6":
+        print()
+        print(f"HURRAY !!!!!! NICE You Have Hit a Six")
+        score_board+=6
+        print(f"   Your Total Runs are :- {score_board}")
+        print()
+        play_next_ball=input(" To Play Next Ball press Enter")
+       
+        
+    if i =="0":
+        print()
+        print(f"SORRY Unfortunately You Are OUT")
+        score_board+=0
+        print(f"   Your Total Runs are :- {score_board}")
+        break
+        
+        
+print()
+print(f"THANKS {player} for Playing You Have Totally Scored :- {score_board} Runs ")
+
+        
